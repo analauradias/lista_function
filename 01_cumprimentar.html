@@ -7,10 +7,18 @@
     */
 
     //Entrada
-
-
+    let cumprimento = function() {
+        return 'Bom dia';
+        
+    }
+    let nome = prompt(`Informe seu nome:`);
     //Processamento
 
+    function saudacao(msg, nome) {
+        alert(`${msg} ${nome}`);
+    }
+
+    saudacao(cumprimento(), nome);
 
     //Saída
     
