@@ -7,11 +7,18 @@
     */
 
     //Entrada
-
+    let palavra = prompt(`Insira a palavra`);
 
     //Processamento
-
+    function vogais() {
+        let qtd = 0;
+        for (const leitor of palavra) {
+            if(leitor == "a" || leitor == "e" || leitor == "i" || leitor == "o" || leitor == "u")
+            qtd++
+        }
+        return qtd;
+    }
 
     //Saída
-
+    alert(`A palavra ${palavra} tem ${vogais()} vogai(s)`);
 </script>
