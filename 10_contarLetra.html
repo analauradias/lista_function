@@ -6,11 +6,18 @@
     */
 
     //Entrada
-
-
+    let frase = prompt(`Insira a frase ou palavra`).trim().toLowerCase();
+    let letra = prompt(`Insira a letra que vpcê quer saber quantas vezes aparece`);
     //Processamento
-
+    function quantasVezes() {
+        let qtd = 0;
+        for (const leitor of frase) {
+            if(leitor == letra)
+            qtd++;
+        }
+        return qtd;
+    }
 
     //Saída
-
+    alert(`A letra ${letra} aparece ${quantasVezes()} vezes`);
 </script>

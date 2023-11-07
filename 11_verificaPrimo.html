@@ -5,11 +5,17 @@
     */
 
     //Entrada
-
-
+    let number = Number(prompt(`Insira um número`));
+    let num = [];
     //Processamento
-
+    function primo() {
+        for (let i = 2; i < number; i++) {
+            num.push(number % i);          
+        }
+        if (num.includes(0) === false) return (`O número ${number} é primo.`);
+            else return (`O número ${number} não é primo`);
+    }
 
     //Saída
-
+    alert(primo());
 </script>

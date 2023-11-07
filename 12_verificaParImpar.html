@@ -5,11 +5,15 @@
     */
 
     //Entrada
-
+    let num = Number(prompt(`Insira um número inteiro`));
 
     //Processamento
-
+    function imparPar() {
+        if(num % 2 == 0)
+        return (`O número ${num} é par`);
+    else return (`O número ${num} é ímpar`);
+    }
 
     //Saída
-
+    alert(imparPar());
 </script>
