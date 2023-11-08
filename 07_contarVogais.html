@@ -10,15 +10,14 @@
     let palavra = prompt(`Insira a palavra`);
 
     //Processamento
-    function vogais() {
+    function vogais(p) {
         let qtd = 0;
         for (const leitor of palavra) {
             if(leitor == "a" || leitor == "e" || leitor == "i" || leitor == "o" || leitor == "u")
             qtd++
         }
-        return qtd;
+        alert(`A palavra ${palavra} tem ${qtd} vogai(s)`);
     }
-
+    vogais(palavra)
     //Saída
-    alert(`A palavra ${palavra} tem ${vogais()} vogai(s)`);
 </script>
