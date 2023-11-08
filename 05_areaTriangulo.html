@@ -9,10 +9,11 @@
     let b = Number(prompt(`Insira a base do triângulo`));
     let h = Number(prompt(`Insira a altura do triângulo`));
     //Processamento
-    function area(){
-        let a = (b * h) / 2;
+    function area(base, altura){
+        let a = (base * altura) / 2;
         return a;
     }
     //Saída
-    alert(`Área do triângulo = ${area()}cm²`);
+    const resultado = area(b, h);
+    alert(`Área do triângulo = ${resultado}cm²`);
 </script>

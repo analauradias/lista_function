@@ -8,18 +8,14 @@
     */
 
     //Entrada
-    let r = Number(prompt(`Insira o raio do círculo`));
 
     //Processamento
-    function area(){
-        let a = 3.14 * (r*r);
-        return a;
-    }  
-    function perimetro() {
-        let p = 2 * 3.14 * r;
-        return p;
+    function area(raio){
+        let a = 3.14 * raio ** 2;
+        let p = 2 * 3.14 * raio;
+        return alert(`A área do círculo é ${a}m². Já o perimetro é de ${p}m`);
     }  
 
     //Saída
-    alert(`Área = ${area().toFixed(2)}; Perímetro = ${perimetro().toFixed(2)}`)
+    alert(`Área = ${area(Number(prompt(`Insira o raio do círculo`))).toFixed(2)}`);
 </script>

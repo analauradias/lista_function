@@ -6,14 +6,13 @@
     */
 
     //Entrada
-    let temperatura = Number(prompt(`Insira a temperatura em graus Fahrenheit`));
 
     //Processamento
-    function conversao(){
+    function conversao(temperatura){
         let c = (temperatura - 32) * 5 / 9 ;
         return c;
     }
 
     //Saída
-    alert(`À temperatura em Celsius fica: ${conversao()}°C`)
+    alert(`À temperatura em Celsius fica: ${conversao(Number(prompt(`Insira a temperatura em graus Fahrenheit`)))}°C`)
 </script>
